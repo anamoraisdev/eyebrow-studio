@@ -9,14 +9,18 @@ const Navbar = () => {
                     Serviços
                 </a>
                 <a href='' className=" hover:text-secondary-200">
+                    Horários
+                </a>
+                <a href='' className=" hover:text-secondary-200">
                     O espaço
                 </a>
                 <a href='' className=" hover:text-secondary-200">
                     Galeria
                 </a>
                 <a href='' className=" hover:text-secondary-200">
-                    Equipe
+                   Sobre
                 </a>
+
                 <a href='' className=" hover:text-secondary-200">
                     Fale conosco
                 </a>

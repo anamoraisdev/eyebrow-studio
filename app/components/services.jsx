@@ -17,12 +17,13 @@ const Services = () => {
         }
     ]
     return (
-        <main className="flex flex-col justify-center items-center gap-4 py-8">
+        <main className="flex flex-col justify-center items-center gap-4 p-20">
             <h1 className="text-3xl hover:text-secondary-100 text-secondary-200">Nossos serviços</h1>
-            <div className="flex flex-wrap justify-center gap-4">
+            <p className="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nemo odit harum. Unde nam nisi!</p>
+            <div className="flex flex-wrap justify-center gap-10">
                 {services.map((service) =>
-                    <div className="shadow-lg border w-[24rem] h-[32rem]">
-                        <img src={service.png} alt={`foto do ${service.name}`} className=" w-full h-[12rem] object-cover" />
+                    <div className="shadow-md rounded-2xl border w-[24rem] h-[32rem]">
+                        <img src={service.png} alt={`foto do ${service.name}`} className="rounded-t-2xl w-full h-[12rem] object-cover" />
                         <div className="p-6 flex flex-col justify-center items-start gap-4 text-primary">
                             <h2 className="text-2xl">{service.name}</h2>
                             <p>
