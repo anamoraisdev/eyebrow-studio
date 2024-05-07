@@ -1,25 +1,32 @@
 
+
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
-    webpack: (config, { isServer }) => {
-      // Adicione as regras para lidar com arquivos de imagem aqui
+  webpack: (config, { isServer }) => {
+    // Verifica se é o servidor e adiciona as regras para lidar com arquivos de imagem
+    if (!isServer) {
       config.module.rules.push({
         test: /\.(png|jpe?g|gif|svg)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: 'url-loader',
             options: {
-              esModule: false,
+              limit: 8192, // converte imagens menores que 8kb para base64 para otimização
               publicPath: '/_next',
-              name: 'static/images/[name].[hash].[ext]',
+              outputPath: 'static/images',
+              name: '[name].[hash].[ext]',
+              esModule: false,
             },
           },
         ],
       });
-  
-      return config;
-    },
+    }
+
+    return config;
+  },
 };
+
 
 export default nextConfig;
 

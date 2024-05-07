@@ -1,6 +1,6 @@
 const WorkingTime = () => {
     return (
-        <div className="p-20 bg-complement-100 bg-opacity-30 text-primary">
+        <div id="times" className="p-20 bg-complement-100 bg-opacity-30 text-primary">
             <div className="flex justify-center gap-10 items-start">
                 <img src="/working.png" alt="" className="w-[30rem] h-auto object-cover rounded-md" />
                 <div className="w-[30rem] flex flex-col gap-8">

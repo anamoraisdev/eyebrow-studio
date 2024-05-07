@@ -1,4 +1,7 @@
 'use client';
+import { useEffect } from "react";
+import About from "./components/about";
+import Contact from "./components/contact";
 import Galery from "./components/galery";
 import Navbar from "./components/navbar";
 import Services from "./components/services";
@@ -14,6 +17,8 @@ export default function Home() {
       <WorkingTime />
       <ThePlace />
       <Galery/>
+      <About/>
+      <Contact/>
     </main>
   );
 }

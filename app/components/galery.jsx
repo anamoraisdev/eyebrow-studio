@@ -25,11 +25,19 @@ const Galeria = () => {
         {
           src: "foto1-servico.png",
           title: "design de sonbramcelhas"
-        }
+        },
+        {
+            src: "foto1-servico.png",
+            title: "design de sonbramcelhas"
+          },
+          {
+            src: "foto1-servico.png",
+            title: "design de sonbramcelhas"
+          }
     ]
 
     return (
-        <div className='p-20 flex flex-col items-center bg-complement-100 bg-opacity-50'>
+        <div id="galery" className='p-20 flex flex-col items-center bg-complement-100 bg-opacity-50'>
             <h1 className="text-3xl hover:text-secondary-100 text-secondary-200">Galeria portifólio </h1>
             <p className="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus facilis eum, nostrum asperiores soluta non quasi nesciunt ab.</p>
             <div className="flex flex-wrap justify-center ">
