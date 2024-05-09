@@ -1,9 +1,9 @@
 const WorkingTime = () => {
     return (
         <div id="times" className="p-20 bg-complement-100 bg-opacity-30 text-primary">
-            <div className="flex justify-center gap-10 items-start">
+            <div className="flex flex-col justify-center gap-10 items-start lg:flex-row">
                 <img src="/working.png" alt="" className="w-[30rem] h-auto object-cover rounded-md" />
-                <div className="w-[30rem] flex flex-col gap-8">
+                <div className="w-[100%] flex flex-col gap-8">
                     <div className="">
                         <h1 className="text-3xl hover:text-secondary-100 text-secondary-200">Horario de funcionamento</h1>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum possimus sed reiciendis architecto nisi non sunt? </p>
