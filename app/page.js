@@ -7,6 +7,7 @@ import Navbar from "./components/navbar";
 import Services from "./components/services";
 import ThePlace from "./components/theplace";
 import WorkingTime from "./components/workingTime";
+import Footer from "./components/footer";
 
 export default function Home() {
 
@@ -19,6 +20,7 @@ export default function Home() {
       <Galery/>
       <About/>
       <Contact/>
+      <Footer/>
     </main>
   );
 }
