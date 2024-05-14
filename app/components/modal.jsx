@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from "react";
-import { services } from "./services";
+import { services } from "./sections/services";
 
 const Modal = ({ setOpenModal, handleSendMessage}) => {
     const [selectedService, setselectedService] = useState("")
