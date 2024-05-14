@@ -1,3 +1,5 @@
+import Title from "../Title";
+
 const WorkingTime = () => {
     return (
         <div id="times" className="p-20 bg-complement-100 bg-opacity-30 text-primary">
@@ -5,7 +7,7 @@ const WorkingTime = () => {
                 <img src="/working.png" alt="" className="w-[30rem] h-auto object-cover rounded-md" />
                 <div className="w-[100%] flex flex-col gap-8">
                     <div className="">
-                        <h1 className="text-3xl hover:text-secondary-100 text-secondary-200">Horario de funcionamento</h1>
+                        <Title title="Horário de funcionamento"/>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum possimus sed reiciendis architecto nisi non sunt? </p>
                     </div>
                     <div className="border-b flex justify-between border-primary">

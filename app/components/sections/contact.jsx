@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Map from "../map";
+import Title from "../Title";
 
 const Contact = ({ handleSendMessage }) => {
     const [name, setName] = useState('');
@@ -8,7 +9,7 @@ const Contact = ({ handleSendMessage }) => {
     return (
         <div id="contact" className="lg:p-20 p-5 ">
             <div className="text-center pb-10">
-                <h1 className="text-3xl hover:text-secondary-100 text-secondary-200 text-center">Fale conosco</h1>
+                <Title title="fale conosco"/>
                 <h2 className="font-md text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hi impedit odit modi labore reiciendis culpa?</h2>
             </div>
             <div className=" flex items-center justify-center text-primary flex-col lg:flex-row ">
@@ -21,7 +22,7 @@ const Contact = ({ handleSendMessage }) => {
                     </div>
                     <label>sua mensagem</label>
                     <textarea placeholder="sua mensagem" className="w-[80%] p-2 border" onChange={(event) => setMessage(event.target.value)} value={message}></textarea>
-                    <button onClick={() => handleSendMessage(true, name, message, phone)} className="px-4 py-3 rounded hover:bg-secondary-100 bg-secondary-200 text-white">Enviar</button>
+                    <button onClick={() => handleSendMessage(true, name, message, phone)} className="px-4 py-3 rounded hover:bg-primary bg-secondary-200 text-white">Enviar</button>
 
                     <p className="">Avenida Alameda Campomar 01, Jardim Miramar - Rio das ostras/ RJ</p>
                 </form>

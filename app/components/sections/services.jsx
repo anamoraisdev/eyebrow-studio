@@ -1,3 +1,4 @@
+import Title from "../Title";
 
 export const services = [
     {
@@ -19,7 +20,7 @@ export const services = [
 const Services = ({setOpenModal}) => {
   return (
         <main id="services" className="flex flex-col justify-center items-center gap-4 p-20">
-            <h1 className="text-3xl hover:text-secondary-100 text-secondary-200">Nossos serviços</h1>
+            <Title title="Nossos serviços"/>
             <p className="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nemo odit harum. Unde nam nisi!</p>
             <div className="flex flex-wrap justify-center gap-10">
                 {services.map((service, index) =>
@@ -30,7 +31,7 @@ const Services = ({setOpenModal}) => {
                             <p>
                                 {service.description}
                             </p>
-                            <button className="px-4 py-3 rounded hover:bg-secondary-100 bg-secondary-200 text-white" onClick={() => setOpenModal(true)}>agendar</button>
+                            <button className="px-4 py-3 rounded hover:bg-primary bg-secondary-200 text-white" onClick={() => setOpenModal(true)}>agendar</button>
                         </div>
                     </div>
                 )}
