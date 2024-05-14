@@ -3,7 +3,7 @@ import About from "./components/sections/about";
 import Contact from "./components/sections/contact";
 import Galery from "./components/sections/galery";
 import Navbar from "./components/navbar";
-import Services from "./components/services";
+import Services from "./components/sections/services";
 import ThePlace from "./components/theplace";
 import WorkingTime from "./components/workingTime";
 import Footer from "./components/footer";
