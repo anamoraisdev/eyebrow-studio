@@ -27,7 +27,7 @@ const Modal = ({ setOpenModal, handleSendMessage}) => {
     
     return (
         <div className="bg-black bg-opacity-30 fixed inset-0 overflow-y-auto flex justify-center items-center">
-            <div className="bg-white max-w-[50%] w-[50%] p-20 flex flex-col gap-4 ">
+            <div className="bg-white max-w-[80%] w-[80%] lg:w-[50%] p-20 flex flex-col gap-4 ">
                 <div className="flex justify-between">
                     <h1>Agende seu horario!</h1>
                     <button onClick={() => setOpenModal(false)}>X</button>
@@ -69,7 +69,7 @@ const Modal = ({ setOpenModal, handleSendMessage}) => {
                         <p>Assumo esta ciente com os termos de compromisso!</p>
                     </div>
                     {error && <p className="text-red-500">{error}</p> }
-                    <button type="submit" onClick={agendar} className="px-4 py-3 rounded hover:bg-secondary-100 bg-secondary-200 text-white">agendar</button>
+                    <button type="submit" onClick={agendar} className="px-4 py-3 rounded hover:bg-primary bg-secondary-200 text-white">agendar</button>
                 </div>
             </div>
         </div>

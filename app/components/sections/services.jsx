@@ -1,36 +1,39 @@
+import Title from "../Title";
 
 export const services = [
     {
-        name: "Design de sonbrancelhas",
-        png: "/foto1-servico.png",
+        name: "Design Personalizado de sobrancelhas",
+        jpeg: "/foto-servico9.jpeg",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat fuga ipsum ab enim mollitia quidem corrupti architecto reiciendis nam maiores! Voluptas iusto ducimus eius rerum vero rem perferendis ipsum ab"
     },
     {
-        name: "Aplicacao de renna",
-        png: "/foto1-servico.png",
+        name: "Design Personalizado + Henna",
+        jpeg: "/foto-servico1.jpeg",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat fuga ipsum ab enim mollitia quidem corrupti architecto reiciendis nam maiores! Voluptas iusto ducimus eius rerum vero rem perferendis ipsum ab"
     },
     {
-        name: "Buço",
-        png: "/foto1-servico.png",
+        name: "Design Personalizado + tintura",
+        jpeg: "/foto-servico2.jpeg",
         description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat fuga ipsum ab enim mollitia quidem corrupti architecto reiciendis nam maiores! Voluptas iusto ducimus eius rerum vero rem perferendis ipsum ab"
-    }
+    },
+    {
+        name: "Depilação de Buço na linha ou cera",
+        jpeg: "/foto-servico6.jpeg",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat fuga ipsum ab enim mollitia quidem corrupti architecto reiciendis nam maiores! Voluptas iusto ducimus eius rerum vero rem perferendis ipsum ab"
+    },
 ]
 const Services = ({setOpenModal}) => {
   return (
-        <main id="services" className="flex flex-col justify-center items-center gap-4 p-20">
-            <h1 className="text-3xl hover:text-secondary-100 text-secondary-200">Nossos serviços</h1>
-            <p className="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est nemo odit harum. Unde nam nisi!</p>
-            <div className="flex flex-wrap justify-center gap-10">
+        <main id="services" className="flex flex-col justify-center items-center gap-4 p-6 pt-6 pb-24">
+            <Title title="Nossos serviços"/>
+            <p className="text-primary">Descubra nossos tratamentos exclusivos, projetados para realçar sua beleza natural.</p>
+            <div className="flex flex-wrap justify-center gap-2">
                 {services.map((service, index) =>
-                    <div key={index} className="shadow-md rounded-2xl border w-[24rem] h-[32rem]">
-                        <img src={service.png} alt={`foto do ${service.name}`} className="rounded-t-2xl w-full h-[12rem] object-cover" />
+                    <div key={index} className="shadow-md rounded-2xl border w-[20rem]">
+                        <img src={service.jpeg} alt={`foto do ${service.name}`} className="rounded-t-2xl w-full h-[12rem] object-cover" />
                         <div className="p-6 flex flex-col justify-center items-start gap-4 text-primary">
                             <h2 className="text-2xl">{service.name}</h2>
-                            <p>
-                                {service.description}
-                            </p>
-                            <button className="px-4 py-3 rounded hover:bg-secondary-100 bg-secondary-200 text-white" onClick={() => setOpenModal(true)}>agendar</button>
+                            <button className="px-4 py-3 rounded hover:bg-primary bg-secondary-200 text-white" onClick={() => setOpenModal(true)}>agendar</button>
                         </div>
                     </div>
                 )}
