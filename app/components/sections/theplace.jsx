@@ -10,9 +10,9 @@ const ThePlace = () => {
                 </p>
             </div>
             <div className="flex flex-col items-center lg:flex-row">
-                <img src="/place2.jpeg" className="w-[16rem] h-[22rem] mr-[-20px] mt-4 object-cover rounded-2xl transform rotate-12" />
-                <img src="/place1.jpeg" className="w-[16rem] h-[22rem] mr-[-20px] object-cover rounded-2xl transform -rotate-6" />
-                <img src="/place4.jpeg" className="w-[16rem] h-[22rem] mr-[-20px] mb-4 object-cover rounded-2xl transform rotate-12" />
+                <img src="/place2.jpeg" alt='foto do espaço' className="w-[16rem] h-[22rem] mr-[-20px] mt-4 object-cover rounded-2xl transform rotate-12" />
+                <img src="/place1.jpeg" alt='foto do espaço' className="w-[16rem] h-[22rem] mr-[-20px] object-cover rounded-2xl transform -rotate-6" />
+                <img src="/place4.jpeg" alt='foto do espaço' className="w-[16rem] h-[22rem] mr-[-20px] mb-4 object-cover rounded-2xl transform rotate-12" />
             </div>
         </div>
     )

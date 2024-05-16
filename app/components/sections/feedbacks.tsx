@@ -13,7 +13,7 @@ const Feedbacks  = () =>{
             </div>
             <div className="flex gap-10">
                 {images.map((image) => 
-                <img src={image} className="w-[24rem] h-auto object-start"/>
+                <img src={image} alt='' className="w-[24rem] h-auto object-start"/>
                 
                 )}
 
