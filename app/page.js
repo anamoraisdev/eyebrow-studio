@@ -13,6 +13,7 @@ import ButtonWhatsapp from "./components/buttonWhatsapp";
 
 export default function Home() {
   const [openModal, setOpenModal] = useState(false)
+  
   const handleSendMessage = ({ isMessage, name, message, phone }) => {
     const telefoneEmpresa = '5541984996202';
 

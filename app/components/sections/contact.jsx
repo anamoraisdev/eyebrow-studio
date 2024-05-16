@@ -9,8 +9,8 @@ const Contact = ({ handleSendMessage }) => {
     return (
         <div id="contact" className="lg:p-20 p-5 ">
             <div className="text-center pb-10">
-                <Title title="fale conosco"/>
-                <h2 className="font-md text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hi impedit odit modi labore reiciendis culpa?</h2>
+                <Title title="Fale conosco"/>
+                <h2 className="font-md text-primary">Estamos aqui para ouvir você. Entre em contato e deixe-nos ajudar a realçar sua beleza</h2>
             </div>
             <div className=" flex items-center justify-center text-primary flex-col lg:flex-row ">
                 <form className="flex flex-col gap-6 items-start">

@@ -19,10 +19,10 @@ const Footer = () => {
 
           <div className="text-sm">
             <h4 className="font-bold mb-4">Contato</h4>
-            <p>Endereço: Rua XYZ, 123</p>
-            <p>Telefone: (00) 1234-5678</p>
-            <p>Email: info@seusite.com</p>
-            <p>instagram: info@seusite.com</p>
+            <p>Endereço: Estr. do palmital nᵒ 1. Atrás da polícia militar rodoviária</p>
+            <p>Telefone: (22)999193117</p>
+            <p>Facebook: Estter Oliveira Sobrancelhas </p>
+            <p>instagram: @estteroliveirasobrancelhas</p>
           </div>
 
 
