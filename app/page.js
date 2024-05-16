@@ -53,7 +53,7 @@ export default function Home() {
         }
       });
     };
-    if(window){
+    if(typeof window !== "undefined"){
       window.addEventListener('scroll', handleScroll);
   
       return () => {
