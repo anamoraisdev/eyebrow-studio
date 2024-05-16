@@ -24,7 +24,7 @@ const Contact = ({ handleSendMessage }) => {
                     <textarea placeholder="sua mensagem" className="w-[80%] p-2 border" onChange={(event) => setMessage(event.target.value)} value={message}></textarea>
                     <button onClick={() => handleSendMessage(true, name, message, phone)} className="px-4 py-3 rounded hover:bg-primary bg-secondary-200 text-white">Enviar</button>
 
-                    <p className="">Avenida Alameda Campomar 01, Jardim Miramar - Rio das ostras/ RJ</p>
+                    <p className="">Estr. do palmital nᵒ 1. Atrás da polícia militar rodoviária.</p>
                 </form>
                 <Map />
             </div>

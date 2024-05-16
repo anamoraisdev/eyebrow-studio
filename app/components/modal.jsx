@@ -27,7 +27,7 @@ const Modal = ({ setOpenModal, handleSendMessage}) => {
     
     return (
         <div className="bg-black bg-opacity-30 fixed inset-0 overflow-y-auto flex justify-center items-center">
-            <div className="bg-white max-w-[50%] w-[50%] p-20 flex flex-col gap-4 ">
+            <div className="bg-white max-w-[80%] w-[80%] lg:w-[50%] p-20 flex flex-col gap-4 ">
                 <div className="flex justify-between">
                     <h1>Agende seu horario!</h1>
                     <button onClick={() => setOpenModal(false)}>X</button>

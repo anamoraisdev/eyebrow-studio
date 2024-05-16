@@ -24,7 +24,7 @@ export const services = [
 ]
 const Services = ({setOpenModal}) => {
   return (
-        <main id="services" className="flex flex-col justify-center items-center gap-4 p-6 pb-28">
+        <main id="services" className="flex flex-col justify-center items-center gap-4 p-6 pt-6 pb-24">
             <Title title="Nossos serviços"/>
             <p className="text-primary">Descubra nossos tratamentos exclusivos, projetados para realçar sua beleza natural.</p>
             <div className="flex flex-wrap justify-center gap-2">

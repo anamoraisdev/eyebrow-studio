@@ -10,6 +10,7 @@ import Footer from "./components/footer";
 import { useEffect, useState } from "react";
 import Modal from "./components/modal";
 import ButtonWhatsapp from "./components/buttonWhatsapp";
+import Banner from "./components/banner";
 
 export default function Home() {
   const [openModal, setOpenModal] = useState(false)
@@ -63,6 +64,7 @@ export default function Home() {
   return (
     <main className="h-screen overflow-y-auto scroll-snap">
       <Navbar />
+      <Banner setOpenModal={setOpenModal} />
       <ButtonWhatsapp handleSendMessage={handleSendMessage}/>
 
       {openModal && <Modal setOpenModal={setOpenModal} handleSendMessage={handleSendMessage} />}

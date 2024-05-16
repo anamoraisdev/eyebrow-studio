@@ -5,35 +5,35 @@ const Galeria = () => {
   const imagens = [
     {
       src: "foto-servico1.jpeg",
-      title: "design de sonbramcelhas"
+      title: "Design + henna"
     },
     {
       src: "foto-servico2.jpeg",
-      title: "design de sonbramcelhas"
+      title: "Design + henna"
     },
     {
       src: "foto-servico3.jpeg",
-      title: "design de sonbramcelhas"
+      title: "Design + tintura"
     },
     {
       src: "foto-servico4.jpeg",
-      title: "design de sonbramcelhas"
+      title: "Design + henna"
     },
     {
       src: "foto-servico5.jpeg",
-      title: "design de sonbramcelhas"
+      title: "Design de sobrancelhas"
     },
     {
       src: "foto-servico6.jpeg",
-      title: "design de sonbramcelhas"
+      title: "Depilação de buço"
     },
     {
       src: "foto-servico8.jpeg",
-      title: "design de sonbramcelhas"
+      title: "Design + tintura"
     },
     {
       src: "foto-servico9.jpeg",
-      title: "design de sonbramcelhas"
+      title: "Design de sobrancelhas"
     }
   ]
 

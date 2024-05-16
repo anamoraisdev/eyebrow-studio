@@ -28,7 +28,7 @@ const Footer = () => {
 
         </div>
 
-        <span className="text-sm border-t w-full text-center border-complement-100 border-opacity-20 ">&copy; 2024 Seu Site</span>
+        <span className="text-sm border-t w-full text-center border-complement-100 border-opacity-20 ">&copy; 2024 Espaço Estter Oliveira Sobrancelhas</span>
       </div>
     </footer>
   );
