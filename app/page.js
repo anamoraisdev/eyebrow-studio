@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import Modal from "./components/modal";
 import ButtonWhatsapp from "./components/buttonWhatsapp";
 import Banner from "./components/banner";
+import Feedbacks from "./components/sections/feedbacks";
 
 export default function Home() {
   const [openModal, setOpenModal] = useState(false)
@@ -73,6 +74,7 @@ export default function Home() {
       <WorkingTime />
       <ThePlace />
       <Galery />
+      <Feedbacks/>
       <About />
       <Contact handleSendMessage={handleSendMessage} />
       <Footer />
