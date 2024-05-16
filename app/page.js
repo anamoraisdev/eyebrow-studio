@@ -36,28 +36,28 @@ export default function Home() {
     const whatsappUrl = buildWhatsappUrl(messageText);
 
     if (typeof window !== 'undefined') {
-      window.open(whatsappUrl, '_blank');
+      window?.open(whatsappUrl, '_blank');
     } else {
       console.error('Não é possível abrir o WhatsApp no ambiente do servidor.');
     }
   }
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll('.section');
-      sections.forEach(section => {
-        const distanceFromTop = section.getBoundingClientRect().top;
-        if (distanceFromTop < window.innerHeight * 0.75) {
-          section.style.opacity = 1;
+      const sections = document?.querySelectorAll('.section');
+      sections?.forEach(section => {
+        const distanceFromTop = section?.getBoundingClientRect().top;
+        if (distanceFromTop < window?.innerHeight * 0.75) {
+          section?.style.opacity = 1;
         } else {
-          section.style.opacity = 0;
+          section?.style.opacity = 0;
         }
       });
     };
     if(typeof window !== "undefined"){
-      window.addEventListener('scroll', handleScroll);
+      window?.addEventListener('scroll', handleScroll);
   
       return () => {
-        window.removeEventListener('scroll', handleScroll);
+        window?.removeEventListener('scroll', handleScroll);
       };
     }
   }, []);
