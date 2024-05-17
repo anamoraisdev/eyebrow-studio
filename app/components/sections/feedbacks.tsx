@@ -11,12 +11,11 @@ const Feedbacks  = () =>{
             </p>
 
             </div>
-            <div className="flex gap-10">
+            <div className="flex flex-col lg:flex-row gap-10">
                 {images.map((image, index) => 
                 <img src={image} alt='' key={index} className="w-[24rem] h-auto object-start"/>
                 
                 )}
-
             </div>
         </div>
     )

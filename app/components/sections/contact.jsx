@@ -1,11 +1,15 @@
 import { useState } from "react";
-import Map from "../map";
+
 import Title from "../Title";
+import dynamic from "next/dynamic";
 
 const Contact = ({ handleSendMessage }) => {
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');
     const [message, setMessage] = useState('');
+    const Map = dynamic(() => import('../map'), {
+        ssr: false
+      });
     return (
         <div id="contact" className="lg:p-20 p-5 ">
             <div className="text-center pb-10">
