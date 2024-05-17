@@ -15,7 +15,7 @@ import Feedbacks from "./components/sections/feedbacks";
 
 export default function Home() {
   const [openModal, setOpenModal] = useState(false)
-  
+
   const handleSendMessage = ({ isMessage, name, message, phone }) => {
     const telefoneEmpresa = '5541984996202';
 
@@ -24,14 +24,9 @@ export default function Home() {
     };
 
     let messageText = '';
-
-    if (isMessage) {
-      messageText = `Olá me chamo ${name}, ${message}. Meu número de contato é ${phone}`;
-    } else if (!isMessage && message) {
-      messageText = `${message}`;
-    } else {
-      messageText = "Olá, venho do site e gostaria de mais informações "
-    }
+    messageText = isMessage
+    ? `Olá me chamo ${name}, ${message}. Meu número de contato é ${phone}`
+    : message || "Olá, venho do site e gostaria de mais informações";
 
     const whatsappUrl = buildWhatsappUrl(messageText);
 
@@ -41,33 +36,36 @@ export default function Home() {
       console.error('Não é possível abrir o WhatsApp no ambiente do servidor.');
     }
   }
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = document?.querySelectorAll('.section');
-      sections?.forEach(section => {
-        const distanceFromTop = section?.getBoundingClientRect().top;
-        if (distanceFromTop < window?.innerHeight * 0.75) {
-          section?.style.opacity = 1;
-        } else {
-          section?.style.opacity = 0;
-        }
-      });
-    };
-    if(typeof window !== "undefined"){
-      window?.addEventListener('scroll', handleScroll);
+ 
+    useEffect(() => {
+      if(typeof window !== "undefined"){
+        const handleScroll = () => {
+          const sections = document?.querySelectorAll('.section');
+          sections?.forEach(section => {
+            const distanceFromTop = section.getBoundingClientRect().top;
+            if (distanceFromTop < window?.innerHeight * 0.75) {
+              section.style.opacity = 1;
+            } else {
+              section.style.opacity = 0;
+            }
+          });
+        };
+        
+        window?.addEventListener('scroll', handleScroll);
   
-      return () => {
-        window?.removeEventListener('scroll', handleScroll);
-      };
-    }
-  }, []);
+        return () => {
+          window?.removeEventListener('scroll', handleScroll);
+        };
+      }
+    }, []);
+
 
 
   return (
     <main className="h-screen overflow-y-auto scroll-snap">
       <Navbar />
       <Banner setOpenModal={setOpenModal} />
-      <ButtonWhatsapp handleSendMessage={handleSendMessage}/>
+      <ButtonWhatsapp handleSendMessage={handleSendMessage} />
 
       {openModal && <Modal setOpenModal={setOpenModal} handleSendMessage={handleSendMessage} />}
 
@@ -75,7 +73,7 @@ export default function Home() {
       <WorkingTime />
       <ThePlace />
       <Galery />
-      <Feedbacks/>
+      <Feedbacks />
       <About />
       <Contact handleSendMessage={handleSendMessage} />
       <Footer />
